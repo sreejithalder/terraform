@@ -6,7 +6,7 @@ resource "random_string" "rg" {
 
 resource "azurerm_resource_group" "rg" {
   name     = "101-application-gateway-${random_string.rg.result}"
-  location = "eastus"
+  location = "centralindia"
 }
 
 resource "azurerm_virtual_network" "vnet" {
