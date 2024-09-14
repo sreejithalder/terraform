@@ -141,7 +141,7 @@ Terraform will perform the following actions:
       + name                          = "nic-1"
       + private_ip_address            = (known after apply)
       + private_ip_addresses          = (known after apply)
-      + resource_group_name           = "myResourceGroupAG"
+      + resource_group_name           = "rg-summary-jennet"
       + virtual_machine_id            = (known after apply)
 
       + ip_configuration {
@@ -169,7 +169,7 @@ Terraform will perform the following actions:
       + name                          = "nic-2"
       + private_ip_address            = (known after apply)
       + private_ip_addresses          = (known after apply)
-      + resource_group_name           = "myResourceGroupAG"
+      + resource_group_name           = "rg-summary-jennet"
       + virtual_machine_id            = (known after apply)
 
       + ip_configuration {
@@ -210,7 +210,7 @@ Terraform will perform the following actions:
       + ip_version              = "IPv4"
       + location                = "centralindia"
       + name                    = "myAGPublicIPAddress"
-      + resource_group_name     = "myResourceGroupAG"
+      + resource_group_name     = "rg-summary-jennet"
       + sku                     = "Standard"
       + sku_tier                = "Regional"
       + zones                   = (known after apply)
@@ -220,7 +220,7 @@ Terraform will perform the following actions:
   + resource "azurerm_resource_group" "rg1" {
       + id       = (known after apply)
       + location = "centralindia"
-      + name     = "myResourceGroupAG"
+      + name     = "rg-summary-jennet"
     }
 
   # azurerm_subnet.backend will be created
@@ -233,7 +233,7 @@ Terraform will perform the following actions:
       + enforce_private_link_service_network_policies  = false
       + id                                             = (known after apply)
       + name                                           = "myBackendSubnet"
-      + resource_group_name                            = "myResourceGroupAG"
+      + resource_group_name                            = "rg-summary-jennet"
       + virtual_network_name                           = "myVNet"
     }
 
@@ -247,7 +247,7 @@ Terraform will perform the following actions:
       + enforce_private_link_service_network_policies  = false
       + id                                             = (known after apply)
       + name                                           = "myAGSubnet"
-      + resource_group_name                            = "myResourceGroupAG"
+      + resource_group_name                            = "rg-summary-jennet"
       + virtual_network_name                           = "myVNet"
     }
 
@@ -291,7 +291,7 @@ Terraform will perform the following actions:
       + id                    = (known after apply)
       + location              = "centralindia"
       + name                  = "myVNet"
-      + resource_group_name   = "myResourceGroupAG"
+      + resource_group_name   = "rg-summary-jennet"
       + subnet                = (known after apply)
       + vm_protection_enabled = false
     }
@@ -318,7 +318,7 @@ Terraform will perform the following actions:
       + provision_vm_agent         = true
       + public_ip_address          = (known after apply)
       + public_ip_addresses        = (known after apply)
-      + resource_group_name        = "myResourceGroupAG"
+      + resource_group_name        = "rg-summary-jennet"
       + size                       = "Standard_DS1_v2"
       + virtual_machine_id         = (known after apply)
       + zone                       = (known after apply)
@@ -361,7 +361,7 @@ Terraform will perform the following actions:
       + provision_vm_agent         = true
       + public_ip_address          = (known after apply)
       + public_ip_addresses        = (known after apply)
-      + resource_group_name        = "myResourceGroupAG"
+      + resource_group_name        = "rg-summary-jennet"
       + size                       = "Standard_DS1_v2"
       + virtual_machine_id         = (known after apply)
       + zone                       = (known after apply)
