@@ -42,10 +42,10 @@ Terraform will perform the following actions:
   # azurerm_application_gateway.network will be created
   + resource "azurerm_application_gateway" "network" {
       + id                          = (known after apply)
-      + location                    = "eastus"
+      + location                    = "centralindia"
       + name                        = "myAppGateway"
       + private_endpoint_connection = (known after apply)
-      + resource_group_name         = "myResourceGroupAG"
+      + resource_group_name         = "rg-summary-jennet"
 
       + backend_address_pool {
           + id   = (known after apply)
@@ -136,7 +136,7 @@ Terraform will perform the following actions:
       + id                            = (known after apply)
       + internal_dns_name_label       = (known after apply)
       + internal_domain_name_suffix   = (known after apply)
-      + location                      = "eastus"
+      + location                      = "centralindia"
       + mac_address                   = (known after apply)
       + name                          = "nic-1"
       + private_ip_address            = (known after apply)
@@ -164,7 +164,7 @@ Terraform will perform the following actions:
       + id                            = (known after apply)
       + internal_dns_name_label       = (known after apply)
       + internal_domain_name_suffix   = (known after apply)
-      + location                      = "eastus"
+      + location                      = "centralindia"
       + mac_address                   = (known after apply)
       + name                          = "nic-2"
       + private_ip_address            = (known after apply)
@@ -208,7 +208,7 @@ Terraform will perform the following actions:
       + idle_timeout_in_minutes = 4
       + ip_address              = (known after apply)
       + ip_version              = "IPv4"
-      + location                = "eastus"
+      + location                = "centralindia"
       + name                    = "myAGPublicIPAddress"
       + resource_group_name     = "myResourceGroupAG"
       + sku                     = "Standard"
@@ -219,7 +219,7 @@ Terraform will perform the following actions:
   # azurerm_resource_group.rg1 will be created
   + resource "azurerm_resource_group" "rg1" {
       + id       = (known after apply)
-      + location = "eastus"
+      + location = "centralindia"
       + name     = "myResourceGroupAG"
     }
 
@@ -289,7 +289,7 @@ Terraform will perform the following actions:
       + dns_servers           = (known after apply)
       + guid                  = (known after apply)
       + id                    = (known after apply)
-      + location              = "eastus"
+      + location              = "centralindia"
       + name                  = "myVNet"
       + resource_group_name   = "myResourceGroupAG"
       + subnet                = (known after apply)
@@ -306,7 +306,7 @@ Terraform will perform the following actions:
       + extensions_time_budget     = "PT1H30M"
       + hotpatching_enabled        = false
       + id                         = (known after apply)
-      + location                   = "eastus"
+      + location                   = "centralindia"
       + max_bid_price              = -1
       + name                       = "myVM1"
       + network_interface_ids      = (known after apply)
@@ -349,7 +349,7 @@ Terraform will perform the following actions:
       + extensions_time_budget     = "PT1H30M"
       + hotpatching_enabled        = false
       + id                         = (known after apply)
-      + location                   = "eastus"
+      + location                   = "centralindia"
       + max_bid_price              = -1
       + name                       = "myVM2"
       + network_interface_ids      = (known after apply)
